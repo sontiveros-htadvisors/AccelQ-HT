@@ -11,7 +11,7 @@ $ if((Get-FileHash -Path actions-runner-win-x64-2.338.2.zip -Algorithm SHA256).H
 $ Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64-2.338.2.zip", "$PWD")
 
 # Create the runner and start the configuration experience
-$ ./config.cmd --url https://github.com/HighTowerAdvisors/clear-playwright-automation --token CNY5N4BPYLO7JDWXZUGLTZ3K5TTFC
+$ ./config.cmd --url https://github.com/HighTowerAdvisors/clear-playwright-automation --token CNY5N4DR2AIUNS3HXWRBG5DK5TWBE
 
 # Run it!
 $ ./run.cmd
